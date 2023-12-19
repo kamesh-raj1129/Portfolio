@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iN17ZL5ZZKlTz3uNon5N/FtPPI5a2W+e1Rn5uETHFn1QFh9aIp0R4DSh5" crossorigin="anonymous">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <br>
+                    <li><a href="#header" style="scroll-behavior: smooth">Home</a></li>
+                    <li><a href="#about" style="scroll-behavior: smooth">About</a></li>
+                    <li><a href="#portfolio" style="scroll-behavior: smooth" >Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Gnanaprakasam<span><br>Kameshraj</span></h1>
+                <br>
+                <p>Aspiring Computer Scientist</p>
+
+            </div>
+        </div>
+    </div>
+<!-----------About--------------------------------------------->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/Raj.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="Sub-title">About me</h1>
+            <br>
+            <p>A driven and adaptable engineering student with businessacumen, seeking to leverage my transferable skills and passion for computer science.</p>
+            <br>
+            
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                <p class="tab-links" onclick="opentab('Work Experience')">Work Experience</p>
+            </div>
+
+    <div class="tab-contents active-tab" id="Education">
+        <ul>
+            <li><span>SMU - Advanced Diploma in Data Analytics and Machine Learning</span><BR> Sep 2023 -  </li>
+            <li><span>NYP - Diploma in Engineering with Business</span><BR> Mar 2020 - 2023 </li>
+            <li><span>Singapore-Cambridge GCE Ordinary Level</span><BR> Jan 2015 - 2019</li>
+        </ul>
+    </div>
+    
+        <div class="tab-contents" id="Certifications">
+        <ul>
+                <li><span>WSQ Advanced Certificate in Workplace Safety and Health (Level B)</span><BR></li>
+                <li><span>Web Scraping and Data Insights (using R programming)</span><BR></li>
+                <li><span>Advancing Skillsets Of Visual Analytics (Using Ggplot2 Packages In R)</span><BR></li>
+                <li><span>CS50: Introduction to Computer Science</span><BR></li>
+                <li><span>Introduction to Cybersecurity</span><BR></li>
+                <li><span>IBM Docker Essential</span><BR></li>
+                <li><span>JavaScript Algorithms and Data Structures</span><BR></li>
+                <li><span>Data Analytics Essentials</span><BR></li>             
+        </ul>
+
+    </div>
+
+    <div class="tab-contents" id="Work Experience">
+        <ul>
+            <li><span>KV Global Trading | Junior Accountant and Data Analyst</span><BR> 2020 - 2023 </li>
+            <li><span>KV Engineering | IT and Administrative Support Specialist</span><BR>2020 - 2023</li>
+            <li><span>Siemens Singapore | Project Management Intern</span><BR>2020 - 2022</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-----------About--------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <a href="https://www.hackster.io/team_4/q-bot-f58530">
+                <img src="images/66.png">
+                <div class="layer">
+                    <h3>Q-Bot</h3>
+                    <a href="#"><i class="lni lni-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <a href="https://www.hackster.io/Kamesh_Raj/alpha-bfa959">
+                <img src="images/77.png">
+                <div class="layer">
+                    <h3>Alpha</h3>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <a href="https://www.hackster.io/Kamesh_Raj/parrot-d67e9f">
+                <img src="images/99.png">
+                <div class="layer">
+                    <h3>Parrot</h3>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <a href="https://www.hackster.io/Kamesh_Raj/secuvault-dc285f">
+                <img src="images/88.png">
+                <div class="layer">
+                    <h3>SecuVault</h3>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">My Portfolio</a>
+    </div>
+
+</div>
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+</script>
+</body>
+</html>
